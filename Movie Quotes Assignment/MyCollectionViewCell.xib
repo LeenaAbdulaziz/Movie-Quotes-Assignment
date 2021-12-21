@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-Z2-Q23" customClass="MyCollectionViewCell" customModule="Movie_Quotes_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="125"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eRL-1y-fiD">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYU-4r-ONC">
+                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Sdv-LD-1a6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cN4-3o-c1g">
+                        <rect key="frame" x="0.0" y="53" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="WT1-Qh-gDN"/>
+                            <constraint firstAttribute="height" constant="100" id="cjb-2v-yoP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VYU-4r-ONC" firstAttribute="leading" secondItem="eRL-1y-fiD" secondAttribute="leading" id="LRU-o5-p7n"/>
+                    <constraint firstAttribute="trailing" secondItem="cN4-3o-c1g" secondAttribute="trailing" id="LpY-yL-4DC"/>
+                    <constraint firstAttribute="trailing" secondItem="VYU-4r-ONC" secondAttribute="trailing" id="UFX-zw-Hkv"/>
+                    <constraint firstItem="cN4-3o-c1g" firstAttribute="top" secondItem="VYU-4r-ONC" secondAttribute="bottom" constant="32" id="VaD-Tb-oqX"/>
+                    <constraint firstItem="VYU-4r-ONC" firstAttribute="top" secondItem="eRL-1y-fiD" secondAttribute="top" id="WOm-YZ-sd4"/>
+                    <constraint firstItem="cN4-3o-c1g" firstAttribute="leading" secondItem="eRL-1y-fiD" secondAttribute="leading" id="hYQ-ka-O3T"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="164" height="125"/>
+            <connections>
+                <outlet property="imageView" destination="cN4-3o-c1g" id="8bt-bs-l5C"/>
+                <outlet property="movieName" destination="VYU-4r-ONC" id="4xi-Ph-m4w"/>
+            </connections>
+            <point key="canvasLocation" x="220.28985507246378" y="118.86160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
